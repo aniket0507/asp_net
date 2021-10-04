@@ -4,7 +4,7 @@ version: 0.2
 phases:
   build:
     commands:
-      - dotnet build \WebApplication3.sln
+      - dotnet build /WebApplication3.sln
 artifacts:
   files:
     - '**/*'
