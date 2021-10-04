@@ -1,0 +1,15 @@
+version: 0.2
+
+env:
+  variables:
+    PROJECT: WebApplication3
+    .DOTNET Core: 3.1
+phases:
+  build:
+    commands:
+      - nuget restore
+      - dotnet build \WebApplication3\WebApplication3.sln
+artifacts:
+  files:
+    - '**/*'
+  base-directory: 'C:\codebuild\artifacts\_PublishedWebsites\${env:PROJECT}_Package\Archive\'
